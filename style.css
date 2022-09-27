@@ -18,10 +18,29 @@ body {
 
 nav {
     display: flex;
-    padding: 1rem;
-    border-bottom: 1px solid;
+    padding: 1.5rem 0 1.5rem 2rem;
+    position: relative;
 }
 
+.left-nav {
+    margin-left: 2rem;
+}
+.right-nav {
+    position: absolute;
+    right: 1rem;
+}
+
+a {
+    color: var(--gray-color);
+    font-size: 15px;
+    padding-right: 2rem;
+}
+
+.reg-btn {
+    border: 1px solid var(--gray-color);
+    padding: 0.5rem;
+    border-radius: 10px
+}
 .features-dropdown,
 .company-dropdown {
     display: none;
@@ -65,7 +84,7 @@ button {
     width: 8rem;
     background-color: var(--black-color);
     color:var(--background-color);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
     margin-bottom: 4rem;
 }
