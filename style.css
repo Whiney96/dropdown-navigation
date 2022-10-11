@@ -159,7 +159,34 @@ button:hover {
   font-weight: bold;
 }
 
-@media (max-width: 768px) and (min-width: 300px) {
+@media (max-width: 1080px) and (min-width: 769px) {
+  .main-container {
+    width: 700px;
+  }
+
+  .text-section {
+    margin-top: 3rem;
+  }
+  .text-section p, .text-section h1{
+    padding: 0;
+  }
+
+  .text-section h1{
+    font-size: 42px;
+  }
+
+  .text-section p {
+    font-size: 13px;
+  }
+  
+ .logos-section img{
+  width: 23%;
+  padding-right: 0.5rem;
+ }
+ 
+  }
+
+@media (max-width: 768px) and (min-width: 401px) {
   .left-nav,
   .right-nav {
     display: none;
@@ -167,6 +194,7 @@ button:hover {
 
   nav {
     justify-content: space-between;
+    padding-right: 5px;
   }
 
   .menu-icon {
@@ -182,6 +210,7 @@ button:hover {
 
   .main-image1 {
     display: block;
+    width: 100%;
   }
 
   .main-image2 {
@@ -196,4 +225,53 @@ button:hover {
   .logos-section {
     width: 100%;
   }
+  .text-section p {
+    font-size: 15px;
+    padding: 0;
+  }
+  .text-section h1 {
+    font-size: 35px;
+    padding: 0;
+  }
+}
+@media (max-width: 400px) and (min-width: 200px) {
+  .main-image1 {
+    display: block;
+    width: 100%;
+  }
+
+  .main-image2 {
+    display: none;
+  }
+
+  .left-nav,
+  .right-nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .main-container {
+    display: block;
+    text-align: center;
+  }
+
+  .text-section p, .text-section h1 {
+    padding: 0;
+  }
+
+  .text-section h1 {
+    font-size: 35px;
+  }
+
+  nav {
+    gap: 15rem;
+  }
+
+  .logos-section img {
+    width: 22%;
+  }
+
 }
