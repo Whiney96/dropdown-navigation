@@ -26,8 +26,27 @@ nav {
 #company-dropdown {
   display: none;
   position: absolute;
+  background-color: #FFFFFF;
+  padding: 1rem 0 1rem 1rem;
+  margin-top: 0.7rem;
+  border-radius: 10px;
 }
 
+#features {
+  left: -3.5rem;
+}
+
+#features>div {
+  padding: 5px 0;
+}
+
+#company-dropdown>div {
+  padding: 5px 0;
+}
+
+#features>div img {
+  padding-right: 10px;
+}
 
 .menu-icon {
   display: none;
@@ -36,6 +55,7 @@ nav {
 .left-nav {
   margin-left: 2rem;
   display: flex;
+  position: relative;
 }
 
 .right-nav {
@@ -72,7 +92,7 @@ a:hover {
 }
 
 .text-section {
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 
 .image-section {
@@ -113,8 +133,30 @@ p {
   cursor: pointer;
 }
 
+.logos-section {
+  margin-top: 5rem;
+}
+
 .logos-section img {
   padding-right: 1.5rem;
+}
+
+button {
+  width: 10rem;
+  padding: 0.8rem 0;
+  border: 1px solid var(--black-color);
+  font-size: 15px;
+  color: var(--background-color);
+  background-color: var(--black-color);
+  border-radius: 10px;
+}
+
+button:hover {
+  color: var(--black-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--black-color);
+  cursor: pointer;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) and (min-width: 300px) {
