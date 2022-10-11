@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!------------------------------ the start of the nav bar ------------------------>
-    <nav>
-      <img src="/images/logo.svg" alt="snap logo" />
-      <img class="menu-icon" src="/images/icon-menu.svg" alt="">
-      <div class="left-nav">
-        <!-- a dropdown -->
-        <a href="#"
-          >Features <img src="/images/icon-arrow-down.svg" alt="" /><img
-            src="/images/icon-arrow-up.svg"
-            alt=""
-        /></a>
-        <span class="features-dropdown"
-          ><img src="/images/icon-todo.svg" alt="" /> ToDo List</span
-        >
-        <span class="features-dropdown"
-          ><img src="/images/icon-calendar.svg" alt="" /> Calendar</span
-        >
-        <span class="features-dropdown"
-          ><img src="/images/icon-reminders.svg" alt="" /> Reminders</span
-        >
-        <span class="features-dropdown"
-          ><img src="/images/icon-planning.svg" alt="" /> Planning</span
-        >
-        <!-- a dropdown -->
-        <a href="#"
-          >Company <img src="/images/icon-arrow-down.svg" alt="" /><img
-            src="/images/icon-arrow-up.svg"
-            alt=""
-        /></a>
-        <span class="company-dropdown">History</span>
-        <span class="company-dropdown">Our Team</span>
-        <span class="company-dropdown">Blog</span>
-        <a href="#">Career</a>
-        <a href="#">About</a>
-      </div>
-      <div class="right-nav">
-        <a href="">Login</a>
-        <a href="" class="reg-btn">Register</a>
-      </div>
-    </nav>
-    <!-----------------------------------------the end of the nav bar--------------------->
-    <!-----------------------------------------the main content begins here--------------->
-    <section class="main-container">
-      <img class="main-image1" src="/images/image-hero-mobile.png" alt="man with a laptop in hand" />
-      <div class="text-section">
-        <h1>Make remote work</h1>
-        <p>
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button>Learn more</button>
-        <div class="logos-section">
-          <img src="/images/client-databiz.svg" alt="client-databiz" />
-          <img src="/images/client-audiophile.svg" alt="client-audiophile" />
-          <img src="/images/client-meet.svg" alt="client-meet" />
-          <img src="/images/client-maker.svg" alt="client-maker" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!------------------------------ the start of the nav bar ------------------------>
+  <nav>
+    <img src="/images/logo.svg" alt="snap logo" />
+    <img class="menu-icon" src="/images/icon-menu.svg" alt="">
+    <div class="left-nav">
+      <!-- a dropdown -->
+      <div class="dropdown">
+        <a href="#" class="features-btn" onclick="show()">Features <img src="/images/icon-arrow-down.svg" alt="" /><img
+            src="/images/icon-arrow-up.svg" alt="" /></a>
+        <div id="features">
+          <div><a href=""><img src="/images/icon-todo.svg" alt="" /> ToDo List</a></div>
+          <div><a href=""><img src="/images/icon-calendar.svg" alt="" /> Calendar</a></div>
+          <div><a href=""><img src="/images/icon-reminders.svg" alt="" /> Reminders</a></div>
+          <div><a href=""><img src="/images/icon-planning.svg" alt="" /> Planning</a></div>
         </div>
       </div>
-      <div class="image-section">
-        <img class="main-image2" src="/images/image-hero-desktop.png" alt="man with a laptop in hand" />
+      <!-- a dropdown -->
+      <div class="dropdown">
+        <a href="#" id="company">Company <img src="/images/icon-arrow-down.svg" alt="" /><img
+            src="/images/icon-arrow-up.svg" alt="" /></a>
+        <div id="company-dropdown">
+          <div><a href="">History</a></div>
+          <div><a href="">Our Team</a></div>
+          <div><a href="">Blog</a></div>
+        </div>
       </div>
-    </section>
-    <!-----------------------------------------the main content ends here------------------>
-  </body>
+      <a href="#">Career</a>
+      <a href="#">About</a>
+    </div>
+    <div class="right-nav">
+      <a href="">Login</a>
+      <a href="" class="reg-btn">Register</a>
+    </div>
+  </nav>
+  <!-----------------------------------------the end of the nav bar--------------------->
+  <!-----------------------------------------the main content begins here--------------->
+  <section class="main-container">
+    <img class="main-image1" src="/images/image-hero-mobile.png" alt="man with a laptop in hand" />
+    <div class="text-section">
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="learn-more">Learn more</button>
+      <div class="logos-section">
+        <img src="/images/client-databiz.svg" alt="client-databiz" />
+        <img src="/images/client-audiophile.svg" alt="client-audiophile" />
+        <img src="/images/client-meet.svg" alt="client-meet" />
+        <img src="/images/client-maker.svg" alt="client-maker" />
+      </div>
+    </div>
+    <div class="image-section">
+      <img class="main-image2" src="/images/image-hero-desktop.png" alt="man with a laptop in hand" />
+    </div>
+  </section>
+  <!-----------------------------------------the main content ends here------------------>
+  <script src="script.js"></script>
+</body>
+
 </html>

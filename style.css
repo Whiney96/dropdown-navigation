@@ -22,12 +22,20 @@ nav {
   position: relative;
 }
 
+#features,
+#company-dropdown {
+  display: none;
+  position: absolute;
+}
+
+
 .menu-icon {
   display: none;
 }
 
 .left-nav {
   margin-left: 2rem;
+  display: flex;
 }
 
 .right-nav {
@@ -49,10 +57,6 @@ a:hover {
   border: 1px solid var(--gray-color);
   padding: 0.5rem;
   border-radius: 10px;
-}
-.features-dropdown,
-.company-dropdown {
-  display: none;
 }
 
 .main-container {
@@ -94,7 +98,7 @@ p {
   margin-bottom: 2rem;
 }
 
-button {
+.learn-more-btn {
   width: 8rem;
   background-color: var(--black-color);
   color: var(--background-color);
@@ -103,7 +107,7 @@ button {
   margin-bottom: 4rem;
 }
 
-button:hover {
+.learn-more-btn:hover {
   background-color: var(--background-color);
   color: var(--black-color);
   cursor: pointer;
