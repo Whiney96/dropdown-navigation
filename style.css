@@ -26,7 +26,7 @@ nav {
 #company-dropdown {
   display: none;
   position: absolute;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 1rem 0 1rem 1rem;
   margin-top: 0.7rem;
   border-radius: 10px;
@@ -36,15 +36,15 @@ nav {
   left: -3.5rem;
 }
 
-#features>div {
+#features > div {
   padding: 5px 0;
 }
 
-#company-dropdown>div {
+#company-dropdown > div {
   padding: 5px 0;
 }
 
-#features>div img {
+#features > div img {
   padding-right: 10px;
 }
 
@@ -159,7 +159,8 @@ button:hover {
   font-weight: bold;
 }
 
-.login-btn, .reg-btn2 {
+.login-btn,
+.reg-btn2 {
   display: none;
 }
 
@@ -171,24 +172,25 @@ button:hover {
   .text-section {
     margin-top: 3rem;
   }
-  .text-section p, .text-section h1{
+
+  .text-section p,
+  .text-section h1 {
     padding: 0;
   }
 
-  .text-section h1{
+  .text-section h1 {
     font-size: 42px;
   }
 
   .text-section p {
     font-size: 13px;
   }
-  
- .logos-section img{
-  width: 23%;
-  padding-right: 0.5rem;
- }
- 
+
+  .logos-section img {
+    width: 23%;
+    padding-right: 0.5rem;
   }
+}
 
 @media (max-width: 768px) and (min-width: 401px) {
   .left-nav,
@@ -231,10 +233,12 @@ button:hover {
   .logos-section {
     width: 100%;
   }
+
   .text-section p {
     font-size: 15px;
     padding: 0;
   }
+
   .text-section h1 {
     font-size: 35px;
     padding: 0;
@@ -251,12 +255,16 @@ button:hover {
     padding: 4.5rem 0 4.5rem 1rem;
   }
 
-  #features, #company-dropdown {
+  #features,
+  #company-dropdown {
     position: static;
     background-color: var(--background-color);
   }
 
-  .dropdown, .careers-btn, .about-btn, .login-btn{
+  .dropdown,
+  .careers-btn,
+  .about-btn,
+  .login-btn {
     padding-bottom: 1rem;
   }
 
@@ -270,26 +278,28 @@ button:hover {
     padding: 0.8rem 0;
     border-radius: 10px;
   }
-  
-.login-btn, .reg-btn2 {
-  text-align: center;
-  display: block;
-}
 
-.reg-btn {
-  border: none;
-}
+  .login-btn,
+  .reg-btn2 {
+    text-align: center;
+    display: block;
+  }
+
+  .reg-btn {
+    border: none;
+  }
 
   .text-section {
     margin-top: 1rem;
   }
 
-  .text-section p, .text-section h1 {
+  .text-section p,
+  .text-section h1 {
     padding: 0 1rem;
-    margin: 1rem; 
+    margin: 1rem;
   }
-
 }
+
 @media (max-width: 400px) and (min-width: 200px) {
   .main-image1 {
     display: block;
@@ -299,7 +309,6 @@ button:hover {
   .main-image2 {
     display: none;
   }
-
 
   .left-nav {
     display: none;
@@ -313,16 +322,20 @@ button:hover {
     padding: 4.5rem 0 4.5rem 1rem;
   }
 
-  #features, #company-dropdown {
+  #features,
+  #company-dropdown {
     position: static;
     background-color: var(--background-color);
   }
 
-  .dropdown, .careers-btn, .about-btn, .login-btn{
+  .dropdown,
+  .careers-btn,
+  .about-btn,
+  .login-btn {
     padding-bottom: 1rem;
   }
-lo
-  .login-btn {
+
+  lo .login-btn {
     margin-top: 1rem;
   }
 
@@ -332,15 +345,16 @@ lo
     padding: 0.8rem 0;
     border-radius: 10px;
   }
-  
-.login-btn, .reg-btn2 {
-  text-align: center;
-  display: block;
-}
 
-.reg-btn {
-  border: none;
-}
+  .login-btn,
+  .reg-btn2 {
+    text-align: center;
+    display: block;
+  }
+
+  .reg-btn {
+    border: none;
+  }
 
   .right-nav {
     display: none;
@@ -361,10 +375,10 @@ lo
     margin-top: 1rem;
   }
 
-  .text-section p, .text-section h1 {
+  .text-section p,
+  .text-section h1 {
     padding: 0 1rem;
     margin: 1rem;
-    
   }
 
   .text-section h1 {
