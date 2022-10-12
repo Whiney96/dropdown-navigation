@@ -379,10 +379,10 @@ lo
   }
 
   .logos-section {
-    margin: 2rem;
+    margin: 2rem 0;
   }
 
   .logos-section img {
-    width: 5%;
+    width: 20%;
   }
 }
