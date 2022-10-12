@@ -48,7 +48,7 @@ nav {
   padding-right: 10px;
 }
 
-.menu-icon {
+#menu-icon {
   display: none;
 }
 
@@ -159,6 +159,10 @@ button:hover {
   font-weight: bold;
 }
 
+.login-btn, .reg-btn2 {
+  display: none;
+}
+
 @media (max-width: 1080px) and (min-width: 769px) {
   .main-container {
     width: 700px;
@@ -194,11 +198,13 @@ button:hover {
 
   nav {
     justify-content: space-between;
-    padding-right: 5px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
-  .menu-icon {
+  #menu-icon {
     display: block;
+    z-index: 1;
   }
 
   .main-container {
@@ -233,6 +239,56 @@ button:hover {
     font-size: 35px;
     padding: 0;
   }
+
+  .left-nav {
+    position: absolute;
+    background-color: var(--background-color);
+    box-shadow: -1px 1px 5px var(--gray-color);
+    width: 70%;
+    right: 0rem;
+    top: 0;
+    height: 100vh;
+    padding: 4.5rem 0 4.5rem 1rem;
+  }
+
+  #features, #company-dropdown {
+    position: static;
+    background-color: var(--background-color);
+  }
+
+  .dropdown, .careers-btn, .about-btn, .login-btn{
+    padding-bottom: 1rem;
+  }
+
+  .login-btn {
+    margin-top: 1rem;
+  }
+
+  .reg-btn2 {
+    border: 1px solid var(--gray-color);
+    margin-right: 1rem;
+    padding: 0.8rem 0;
+    border-radius: 10px;
+  }
+  
+.login-btn, .reg-btn2 {
+  text-align: center;
+  display: block;
+}
+
+.reg-btn {
+  border: none;
+}
+
+  .text-section {
+    margin-top: 1rem;
+  }
+
+  .text-section p, .text-section h1 {
+    padding: 0 1rem;
+    margin: 1rem; 
+  }
+
 }
 @media (max-width: 400px) and (min-width: 200px) {
   .main-image1 {
@@ -244,22 +300,71 @@ button:hover {
     display: none;
   }
 
-  .left-nav,
+
+  .left-nav {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    box-shadow: -1px 1px 5px var(--gray-color);
+    width: 70%;
+    right: 0rem;
+    top: 0;
+    height: 100vh;
+    padding: 4.5rem 0 4.5rem 1rem;
+  }
+
+  #features, #company-dropdown {
+    position: static;
+    background-color: var(--background-color);
+  }
+
+  .dropdown, .careers-btn, .about-btn, .login-btn{
+    padding-bottom: 1rem;
+  }
+
+  .login-btn {
+    margin-top: 1rem;
+  }
+
+  .reg-btn2 {
+    border: 1px solid var(--gray-color);
+    margin-right: 1rem;
+    padding: 0.8rem 0;
+    border-radius: 10px;
+  }
+  
+.login-btn, .reg-btn2 {
+  text-align: center;
+  display: block;
+}
+
+.reg-btn {
+  border: none;
+}
+
   .right-nav {
     display: none;
   }
 
-  .menu-icon {
+  #menu-icon {
     display: block;
+    z-index: 1;
   }
 
   .main-container {
     display: block;
     text-align: center;
+    padding-top: 5rem;
+  }
+
+  .text-section {
+    margin-top: 1rem;
   }
 
   .text-section p, .text-section h1 {
-    padding: 0;
+    padding: 0 1rem;
+    margin: 1rem;
+    
   }
 
   .text-section h1 {
@@ -267,11 +372,17 @@ button:hover {
   }
 
   nav {
-    gap: 15rem;
+    gap: 15.5rem;
+    padding-left: 1rem;
+    position: fixed;
+    width: 100%;
+  }
+
+  .logos-section {
+    margin: 2rem;
   }
 
   .logos-section img {
-    width: 22%;
+    width: 20%;
   }
-
 }

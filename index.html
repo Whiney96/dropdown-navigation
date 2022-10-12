@@ -16,11 +16,10 @@
   <!------------------------------ the start of the nav bar ------------------------>
   <nav>
     <img src="/images/logo.svg" alt="snap logo" />
-    <img class="menu-icon" src="/images/icon-menu.svg" alt="">
-    <div class="left-nav">
+    <div id="mobile-nav" class="left-nav">
       <!-- a dropdown -->
       <div class="dropdown">
-        <a href="#" id="features-btn">Features <img id="arrow" src="/images/icon-arrow-down.svg" alt="" /></a>
+        <a href="#" id="features-btn" class="features-btn">Features <img id="arrow" src="/images/icon-arrow-down.svg"/></a>
         <div id="features">
           <div><a href=""><img src="/images/icon-todo.svg" alt="" />Todo List</a></div>
           <div><a href=""><img src="/images/icon-calendar.svg" alt="" />Calendar</a></div>
@@ -30,20 +29,23 @@
       </div>
       <!-- a dropdown -->
       <div class="dropdown">
-        <a href="#" id="company">Company <img id="arrow2" src="/images/icon-arrow-down.svg" alt="" /></a>
+        <a href="#" id="company" class="company">Company <img id="arrow2" src="/images/icon-arrow-down.svg" alt="" /></a>
         <div id="company-dropdown">
           <div><a href="">History</a></div>
           <div><a href="">Our Team</a></div>
           <div><a href="">Blog</a></div>
         </div>
       </div>
-      <a href="#">Career</a>
-      <a href="#">About</a>
+      <div class="careers-btn"><a href="#">Careers</a></div>
+      <div class="about-btn"><a href="#">About</a></div>
+      <div class="login-btn"><a href="#">Login</a></div>
+      <div class="reg-btn2"><a href="#" class="reg-btn">Register</a></div>
     </div>
     <div class="right-nav">
-      <a href="">Login</a>
-      <a href="" class="reg-btn">Register</a>
+      <a href="#">Login</a>
+      <a href="#" class="reg-btn">Register</a>
     </div>
+    <img id="menu-icon" src="/images/icon-menu.svg" alt="">
   </nav>
   <!-----------------------------------------the end of the nav bar--------------------->
   <!-----------------------------------------the main content begins here--------------->
