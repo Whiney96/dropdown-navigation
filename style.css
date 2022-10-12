@@ -380,6 +380,7 @@ lo
 
   .logos-section {
     margin: 2rem 0;
+    flex-wrap: nowrap;
   }
 
   .logos-section img {
